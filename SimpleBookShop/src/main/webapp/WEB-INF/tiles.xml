@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- Login page -->
+	<definition name="login" extends="base-definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/login.jsp" />
+		<put-attribute name="header" value=""></put-attribute>
+	</definition>
+	<!-- AccessDeniedJSP -->
+	<definition name="accessDenied" extends="base-definition">
+		<put-attribute name="title" value="AccessDenied" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/accessDenied.jsp" />
+	</definition>
+	<!-- Home Page -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/home.jsp" />
+	</definition>
+
+	<!-- Admin panel -->
+	<definition name="adminPanel" extends="base-definition">
+		<put-attribute name="title" value="AdminPanel" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/adminPanel.jsp" />
+	</definition>
+
+	<!-- Admin all books -->
+	<definition name="allBooks" extends="base-definition">
+		<put-attribute name="title" value="Books" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/allBooks.jsp" />
+	</definition>
+
+	<!-- Admin new book -->
+	<definition name="newBook" extends="base-definition">
+		<put-attribute name="title" value="New book" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/newBook.jsp" />
+	</definition>
+
+	<!-- Admin edit book -->
+	<definition name="editBook" extends="base-definition">
+		<put-attribute name="title" value="Edit book" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/editBook.jsp" />
+	</definition>
+	<!-- Order -->
+	<definition name="order" extends="base-definition">
+		<put-attribute name="title" value="Order" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/order.jsp" />
+	</definition>
+	<!-- Order -->
+	<definition name="orders" extends="base-definition">
+		<put-attribute name="title" value="Orders" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/orders.jsp" />
+	</definition>
+</tiles-definitions>
